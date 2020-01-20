@@ -5,75 +5,77 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Bootstrap ref-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Index</title>
+    <!--Title to  match text below, this may not match HTML file name-->
+    <title>About</title>
+    <!--Styles needed to run page properly, may move to CSS file later if allowed by homework parameters-->
   <style>
-      body{
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        background-color: lightgray;
-      }
-
+      /*top-most container with name and nav bar inside, gives padding and font for nav bar*/
       #container-flex{
         font-family: Georgia, 'Times New Roman', Times, serif;
-        background-color: white;
-        margin-left: 5px;
-        text-align: left;
-        padding-left: 10px;
-        padding-right: 10px;
+        font-size: x-large;
+        padding-left: 5%;
+        padding-right: 5%;
       }
-
-      #container-flex div{
-        justify-content: space-between;
-        font-size: larger;
-        color: cadetblue;
-        background-color: white;
+      /*the row that name and nav bar sit inside*/
+      .row{
+        height: 80px;
+        margin: 0;
+        display: flex;
+      }
+      /*Small screen size wrapped from 767px and below*/
+      @media (min-width: 100px) and (max-width: 767px){
+        #container-flex div {
+        text-align: center;
+    }}
+      /*Larger screen size inline from 768px and up*/
+      @media (min-width: 768px){
+        #container-flex div {
         text-align: right;
-        margin-bottom: 2.5;
-      }
-
+    }}
+      /*ID for the name block, gives color theme, fills height and centers text*/
       #name{
         font-size: xx-large;
         background-color: cadetblue;
         color: white;
         height: 80px;
-        justify-content: space-around;
-        display: flex;
-        align-items: center;
+        padding: 15px;
+        text-align: center;
       }
-
+      /*overrides color, alignment and padding for hrefs in nav bar*/
       a{
         color: cadetblue;
+        align-items: center;
+        padding: 20px;
       }
-
-      h1{
+      /*aligns nav hrefs*/
+      #links{
+        align-self: center;
+      }
+      /*color and font for h1, h2 & h3*/
+      h1, h2, h3 {
         color:cadetblue;
         font-family: Georgia, 'Times New Roman', Times, serif;
         
       }
     </style>
 </head>
-
-
 <body>
   <!--Nav bar-->
       <nav id="container-flex">
         <div class="row">
-          <h1 id="name" class="col-lg-2;">Cody Switzer</h1>
-          <div class="col-lg-5; navbar" style="justify-content: space-between;">
-            <a href="index.html" class="href"> About </a>
-            <a href="portfolio.html" class="href"> Portfolio </a>
-            <a href="contact.html" class="href"> Contact </a>
+          <h1 id="name" class="col-sm-12 col-md-4 col-lg-4;">Cody Switzer</h1>
+          <div id="links" class="col-sm-12 col-md-8 col-lg-8"">
+            <a href="index.html"> About </a>
+            <a href="portfolio.html"> Portfolio </a>
+            <a href="contact.html"> Contact </a>
           </div>
         </div>
       </nav>
-
-
   <!--temporary display of file to help make it easier to identify when viewing on browser-->
   <h1>Index</h1>
-
     <!--script at bottom of body to help with render speed-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
