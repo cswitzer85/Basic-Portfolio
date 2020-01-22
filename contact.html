@@ -1,84 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Bootstrap ref-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Title to  match text below, this may not match HTML file name-->
+    <title>About</title>
+    <!--Styles needed to run page properly, may move to CSS file later if allowed by homework parameters-->
   <style>
-  
-
-  .board{   
-    display: flex;
-    flex-wrap: wrap;
-    background-color: red;
-    width: 1200px;
-    height: 1200px;
-  }
-
-
-
-  .checkbox1{
-    box-sizing: border-box;
-    width: 150px;
-    height: 150px;
-    background-color: black;
-    margin-right: 150px;
-    margin-left: 0px;
-  }
-  .checkbox2{
-    box-sizing: border-box;
-    width: 150px;
-    height: 150px;
-    background-color: black;
-    margin-right: 0px;
-    margin-left: 150px;
-  }
-  
-  
-  </style>
-
+      /*top-most container with name and nav bar inside, gives padding and font for nav bar*/
+            }
+      #nav-flex{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: x-large;
+        padding-left: 5%;
+        padding-right: 5%;
+        background-color: white;
+        border: outset lightblue;
+      }
+      /*the row that name and nav bar sit inside*/
+      .row{
+        height: 80px;
+        margin: 0;
+        display: flex;
+      }
+      /*Small screen size wrapped from 767px and below*/
+      @media (min-width: 100px) and (max-width: 768px){
+        #nav-flex div {
+        text-align: center;}
+        main {margin:6%;}
+        }
+      /*Larger screen size inline from 768px and up*/
+      @media (min-width: 769px){
+        #nav-flex div {
+        text-align: right;}
+        div.mainContainer{
+        width: 75%;
+        }
+        }
+      /*ID for the name block, gives color theme, fills height and centers text*/
+      #name{
+        font-size: xx-large;
+        background-color: cadetblue;
+        color: white;
+        height: 80px;
+        padding: 15px;
+        text-align: center;
+      }
+      /*overrides color, alignment and padding for hrefs in nav bar*/
+      a{
+        color: cadetblue;
+        align-items: center;
+        padding: 20px;
+      }
+      /*aligns nav hrefs*/
+      #links{
+        align-self: center;
+      }
+      /*color and font for h1, h2 & h3*/
+      h1, h2, h3 {
+        color:cadetblue;
+        font-family: Georgia, 'Times New Roman', Times, serif; 
+      }
+      main{
+        background-color: lightgray;
+        margin-right: 5%;
+        padding: 20px;
+      }
+      .mainContainer{
+        padding: 35px;
+        background-color: white;
+      }
+    </style>
 </head>
 <body>
-    <!--Chess?-->
-  
-    <div class="board">
-      <div class="checkbox1"></div>
-      <div class="checkbox1"></div>
-      <div class="checkbox1"></div>
-      <div class="checkbox1"></div>
-      <div class="checkbox2"></div>
-      <div class="checkbox2"></div>
-      <div class="checkbox2"></div>
-      <div class="checkbox2"></div>
-      <div class="checkbox1"></div>
-      <div class="checkbox1"></div>
-      <div class="checkbox1"></div>
-      <div class="checkbox1"></div>
-      <div class="checkbox2"></div>
-      <div class="checkbox2"></div>
-      <div class="checkbox2"></div>
-      <div class="checkbox2"></div>
-      <div class="checkbox1"></div>
-      <div class="checkbox1"></div>
-      <div class="checkbox1"></div>
-      <div class="checkbox1"></div>
-      <div class="checkbox2"></div>
-      <div class="checkbox2"></div>
-      <div class="checkbox2"></div>
-      <div class="checkbox2"></div>
-      <div class="checkbox1"></div>
-      <div class="checkbox1"></div>
-      <div class="checkbox1"></div>
-      <div class="checkbox1"></div>
-      <div class="checkbox2"></div>
-      <div class="checkbox2"></div>
-      <div class="checkbox2"></div>
-      <div class="checkbox2"></div>
-    </div>
-
+  <!--Nav bar-->
+      <nav id="nav-flex">
+        <div class="row">
+          <h1 id="name" class="col-sm-12 col-md-4 col-lg-4;">Cody Switzer</h1>
+          <div id="links" class="col-sm-12 col-md-8 col-lg-8"">
+            <a href="index.html"> About </a>
+            <a href="portfolio.html"> Portfolio </a>
+            <a href="contact.html"> Contact </a>
+          </div>
+        </div>
+      </nav>
+  <!--temporary display of file to help make it easier to identify when viewing on browser-->
+      <main>
+        <div class="mainContainer">
+          <h1>Contact</h1>
+          <HR></HR>
+          <img src="Assets/cat-i-bag-your-bardon-bag-on-head-cat-in-bag-Favim.com-4145938.jpeg" class="float-left" style="padding-right: 10px; padding-bottom: 10px";>
+          <p>
+            Debitis, similique veritatis aperiam totam dolorem exercitationem, placeat quasi, aspernatur quibusdam porro sint cupiditate numquam quam eius fuga tempora nulla! Perspiciatis provident, adipisci voluptates hic maxime repellat eius ducimus! Iste.
+          </p>
+        </div>
+      </main>
 
     <!--script at bottom of body to help with render speed-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
