@@ -1,0 +1,110 @@
+<style>
+
+/*top-most container with name and nav bar inside, gives padding and font for nav bar*/
+#nav-flex {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: white;
+    border: outset lightblue;
+}
+
+/*the row that name and nav bar sit inside*/
+.row {
+    height: 80px;
+    margin: 0;
+    display: flex;
+}
+
+/*ID for the name block, gives color theme, fills height and centers text*/
+#name {
+    font-size: xx-large;
+    background-color: cadetblue;
+    color: white;
+    height: 80px;
+    padding: 15px;
+    text-align: center;
+}
+
+/*overrides color, alignment and padding for hrefs in nav bar*/
+a {
+    color: cadetblue;
+    align-items: center;
+    padding: 20px;
+}
+
+/*aligns nav hrefs*/
+#links {
+    align-self: center;
+}
+
+/*color and font for h1, h2 & h3*/
+h1,
+h2,
+h3 {
+    color: cadetblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main {
+    background-color: lightgray;
+    margin-right: 5%;
+    padding: 20px;
+}
+
+.mainContainer {
+    padding: 35px;
+    background-color: white;
+}
+
+img {
+    border: inset;
+}
+
+/*Media queries are being used to override the default size reactions built into bootstrap so the portfolio better matches that of the provided assets*/
+/*Small screen size wrapped from 767px and below*/
+@media (min-width: 100px) and (max-width: 767px) {
+    #nav-flex div {
+        text-align: center;
+    }
+
+    main {
+        margin: 6%;
+    }
+
+    .float-md-left {
+        width: 100%;
+        height: auto;
+    }
+
+    .float-md-right {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*Larger screen size inline from 768px and up*/
+@media (min-width: 768px) {
+    #nav-flex div {
+        text-align: right;
+        padding-left: 5%;
+    }
+
+    div.mainContainer {
+        width: 700px;
+    }
+
+    .float-md-left {
+        width: 50%;
+        height: auto;
+    }
+
+    .float-md-right {
+        width: 50%;
+        height: auto;
+    }
+}
+
+
+</style>

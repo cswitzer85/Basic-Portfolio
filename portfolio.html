@@ -9,73 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Title to  match text below, this may not match HTML file name-->
-    <title>About</title>
-    <!--Styles needed to run page properly, may move to CSS file later if allowed by homework parameters-->
-  <style>
-      /*top-most container with name and nav bar inside, gives padding and font for nav bar*/
-            }
-      #nav-flex{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: x-large;
-        padding-left: 5%;
-        padding-right: 5%;
-        background-color: white;
-        border: outset lightblue;
-      }
-      /*the row that name and nav bar sit inside*/
-      .row{
-        height: 80px;
-        margin: 0;
-        display: flex;
-      }
-      /*Small screen size wrapped from 767px and below*/
-      @media (min-width: 100px) and (max-width: 768px){
-        #nav-flex div {
-        text-align: center;}
-        main {margin:6%;}
-        }
-      /*Larger screen size inline from 768px and up*/
-      @media (min-width: 769px){
-        #nav-flex div {
-        text-align: right;}
-        div.mainContainer{
-        width: 75%;
-        }
-        }
-      /*ID for the name block, gives color theme, fills height and centers text*/
-      #name{
-        font-size: xx-large;
-        background-color: cadetblue;
-        color: white;
-        height: 80px;
-        padding: 15px;
-        text-align: center;
-      }
-      /*overrides color, alignment and padding for hrefs in nav bar*/
-      a{
-        color: cadetblue;
-        align-items: center;
-        padding: 20px;
-      }
-      /*aligns nav hrefs*/
-      #links{
-        align-self: center;
-      }
-      /*color and font for h1, h2 & h3*/
-      h1, h2, h3 {
-        color:cadetblue;
-        font-family: Georgia, 'Times New Roman', Times, serif; 
-      }
-      main{
-        background-color: lightgray;
-        margin-right: 5%;
-        padding: 20px;
-      }
-      .mainContainer{
-        padding: 35px;
-        background-color: white;
-      }
-    </style>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">    
 </head>
 <body>
   <!--Nav bar-->
@@ -94,6 +29,13 @@
         <div class="mainContainer">
           <h1>Portfolio</h1>
           <HR></HR>
+          <div class="container" style="background-color: #eaeaec;">
+              <img class="float-md-left" src="Assets/riExplore.JPG" alt="Salt Lake">
+              <img class="float-md-right" src="Assets/riCar.jpg" alt="Car">
+              <img class="float-md-left" src="Assets/riFood.jpg" alt="Food">
+              <img class="float-md-right" src="Assets/riFirstRide.JPG" alt="Dog in Car">
+              <img class="float-md-left" src="Assets/riDogs.JPG" alt="Dogs">
+          </div>
           <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
