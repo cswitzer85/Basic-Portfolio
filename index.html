@@ -2,7 +2,7 @@
 <html lang="en">
 
 
-
+  <!--script sources at bottom of body to help with render speed-->
 <head>
   <meta charset="UTF-8">
   <!--Bootstrap ref-->
@@ -18,7 +18,9 @@
   <!--Nav bar-->
   <nav id="nav-flex">
     <div class="row">
+      <!--student name appears inside a container on left which will span entire width on small screen-->
       <h1 id="name" class="col-sm-12 col-md-4 col-lg-4;">Cody Switzer</h1>
+      <!--Links for other pages appear on the right-->
       <div id="links" class="col-sm-12 col-md-8 col-lg-8"">
             <a href=" index.html"> About </a>
         <a href="portfolio.html"> Portfolio </a>
@@ -26,14 +28,16 @@
       </div>
     </div>
   </nav>
-  <!--temporary display of file to help make it easier to identify when viewing on browser-->
+  <!--main section of the page with a container that remains set size for md & lg screens but is responsive at small screen breakpoint-->
   <main>
-    <div class="mainContainer">
+    <div class="col-lg-8 col-md-12 col-sm-12" style="height: auto; padding-left: 0;">
+      <div class="mainContainer">
+        <!--title for the page with a horizontal rule to  break up content-->
       <h1>About Me</h1>
       <HR>
       </HR>
-      <img src="Assets/CS Avatar small.jpg" class="float-left" style="padding-right: 10px; padding-bottom: 5px" ;
-        width="470px">
+      <!--image floats left and word wrap around image as screen size changes-->
+      <img src="Assets/CS Avatar small.jpg" class="float-left" ; width="470px">
       <p>
         My name is Cody Switzer, I'm married (Judy) and have an 18 month old son (Elliott).
         I was born in Denton, Texas and have lived in North Texas my entire life. I love to visit new places with my
@@ -48,7 +52,7 @@
     </div>
   </main>
 
-  <!--script at bottom of body to help with render speed-->
+  <!--script sources at bottom of body to help with render speed-->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
   </script>
