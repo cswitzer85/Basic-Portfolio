@@ -2,7 +2,8 @@
 <html lang="en">
 
 
-  <!--script sources at bottom of body to help with render speed-->
+<!--script sources at bottom of body to help with render speed-->
+
 <head>
   <meta charset="UTF-8">
   <!--Bootstrap ref-->
@@ -12,6 +13,7 @@
   <!--Title to  match text below, this may not match HTML file name-->
   <title>About</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/7d87cc47cb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -22,9 +24,13 @@
       <h1 id="name" class="col-sm-12 col-md-4 col-lg-4;">Cody Switzer</h1>
       <!--Links for other pages appear on the right-->
       <div id="links" class="col-sm-12 col-md-8 col-lg-8">
-            <a href=" index.html"> About </a>
+        <a href=" index.html"> About </a>
         <a href="portfolio.html"> Portfolio </a>
         <a href="contact.html"> Contact </a>
+        <a
+          href="https://docs.google.com/document/d/1qAGARoCOjh_8a_d3teaMyYCx6JeLeVV_4T7eKwMAqFI/edit?usp=sharing">Resume</a>
+        <a href="https://www.linkedin.com/in/cody-switzer-1429593a/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/cswitzer85"><i class="fab fa-github-square"></i></a>
       </div>
     </div>
   </nav>
@@ -33,10 +39,23 @@
     <div class="col-lg-8 col-md-12 col-sm-12" style="height: auto; padding-left: 0;">
       <div class="mainContainer">
         <!--title for the page with a horizontal rule to  break up content-->
-        <h1>Contact</h1>
+        <div class="col">
+          <div>
+            <div class="col" style="color: navy;">
+              <h5>Cody Switzer<br>(214)717-2823<br>cswitzer85@gmail.com</h5>
+            </div>
+          </div>
+          <div>
+            <div class="col">
+              <h1>Contact</h1>
+            </div>
+          </div>
+        </div>
+        <br>
         <HR>
         <!--contact card with form for name, email and message; upon successful submission an alert box will prompt. There is a **disclaimer at bottom of email input-->
         <div class="contactCard">
+          <br>
           <form>
             <div class="form-group">
               <label for="contactName">Full Name</label>
@@ -51,17 +70,17 @@
             </div>
             <div class="form-group">
               <label for="contactMessage">Message</label>
-              <textarea class="form-control" placeholder="Type your Message here (optional)"
-                rows="5"></textarea>
+              <textarea class="form-control" placeholder="Type your Message here (optional)" rows="5"></textarea>
             </div>
-            <button onclick="emailSubmit()"" type="submit" class="btn btn-info">Submit</button>
+            <button onclick="emailSubmit()"" type=" submit" class="btn btn-info"
+              style="background-color: navy; border: outset lightsteelblue;">Submit</button>
           </form>
         </div>
       </div>
 
     </div>
     <!--**disclaimer ref at bottom of page, near submit button-->
-    <p style="font-size: xx-small; color: cadetblue; margin-left: 10px;">**That's how we roll...</p>
+    <p style="font-size: xx-small; color: navy; margin-left: 10px;">**That's how we roll...</p>
 
   </main>
 

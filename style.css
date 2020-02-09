@@ -1,11 +1,12 @@
 /*top-most container with name and nav bar inside, gives padding and font for nav bar*/
+body {
+    line-height: 1rem;
+}
 #nav-flex {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: x-large;
-    padding-left: 5%;
-    padding-right: 5%;
     background-color: white;
-    border: outset lightblue;
+    border: outset lightsteelblue;
 }
 
 /*the row that name and nav bar sit inside*/
@@ -21,16 +22,20 @@
 /*ID for the name block, gives color theme, fills height and centers text*/
 #name {
     font-size: xx-large;
-    background-color: cadetblue;
+    background-color: navy;
     color: white;
-    height: 80px;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
+    height: 80px;
+}
+
+#name.col {
+    height: 80px;
 }
 
 /*overrides color, alignment and padding for hrefs in nav bar*/
 a {
-    color: cadetblue;
+    color: navy;
     align-items: center;
     padding: 2%;
 }
@@ -44,7 +49,7 @@ a {
 h1,
 h2,
 h3 {
-    color: cadetblue;
+    color: navy;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -57,18 +62,24 @@ main {
 
 /*sets background color and alignment for mainContainer*/
 .mainContainer {
-    padding: 5%;
+    padding: 1%;
     background-color: white;
 }
 
 /*creates a uniform inset border on all images*/
 img {
     border: inset;
-    width: 50%;
+    width: 49%;
+    height: auto;
+    float: left;
 }
 
 div.mainContainer {
     width: 725px;
+}
+
+.carousel-control-next {
+    right: 35%;
 }
 
 /*Media queries are being used to override the default size reactions built into bootstrap so the portfolio better matches that of the provided assets*/
@@ -81,10 +92,8 @@ div.mainContainer {
     #nav-flex div {
         text-align: center;
         padding-left: 0;
-    }
-
-    #nav-flex {
-        padding-bottom: 12%;
+        height: 150px;
+        line-height: 2rem;
     }
 
     /*gives slight margin increase on small screen and expands white background evenly around nav links for better look & feel*/
@@ -99,7 +108,23 @@ div.mainContainer {
 
     /*limits border spacing for better look & feel*/
     div.mainContainer {
-        width: 99%;
+        width: 100%;
+    }
+
+    .col {
+        margin-left: -5%;
+    }
+
+    #profilePicture {
+        max-width: 290px;
+    }
+
+    .carousel-control-prev {
+        top: 25%;
+    }
+    .carousel-control-next {
+        right: 10%;
+        top: 25%;
     }
 
 }
