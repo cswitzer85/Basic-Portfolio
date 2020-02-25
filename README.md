@@ -17,7 +17,7 @@ This portfolio is a map of my journey into the world of coding. It contains proj
 * [Acknowledgements](#Acknowledgements) -->
 
 ## About the Project
-This project is ongoing and will be updated periodically as other (public) projects are completed.
+    This project is ongoing and will be updated periodically as other (public) projects are completed.
 
 ## Getting Started
 Visit my Basic-Portfolio main page to view information about me. From there check out my portfolio, find ways to contact me, view my resume and click the links for my GitHub or Linked In pages.
