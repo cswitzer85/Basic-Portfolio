@@ -20,11 +20,11 @@ This portfolio is a map of my journey into the world of coding. It contains proj
 This project is ongoing and will be updated periodically as other (public) projects are completed.
 
 ## Getting Started
-    Visit my Basic-Portfolio main page to view information about me. From there check out my portfolio, find ways to contact me, view my resume and click the links for my GitHub or Linked In pages.
+Visit my Basic-Portfolio main page to view information about me. From there check out my portfolio, find ways to contact me, view my resume and click the links for my GitHub or Linked In pages.
 * [Basic-Portfolio](https://cswitzer85.github.io/Basic-Portfolio/ "Cody Switzer's Basic-Portfolio")
 
 ## Usage
-This webiste operates just like any other website, click on the links to view different content.
+    This webiste operates just like any other website, click on the links to view different content.
 
 ## Contributing
 This project is an ongoing representation of my personal progress. If you'd like to extend advise or comment on the project, please use the contact information below.
