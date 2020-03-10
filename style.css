@@ -1,85 +1,89 @@
 /*top-most container with name and nav bar inside, gives padding and font for nav bar*/
 body {
-    line-height: 1rem;
+  line-height: 1rem;
 }
 #nav-flex {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: x-large;
-    background-color: white;
-    border: outset lightsteelblue;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: x-large;
+  background-color: white;
+  border: outset lightsteelblue;
 }
 
 /*the row that name and nav bar sit inside*/
 .row {
-    height: 80px;
-    margin: 0;
-    display: flex;
-    text-align: right;
-    padding-left: 5%;
-
+  height: 80px;
+  margin: 0;
+  display: flex;
+  text-align: right;
+  padding-left: 5%;
 }
 
 /*ID for the name block, gives color theme, fills height and centers text*/
 #name {
-    font-size: xx-large;
-    background-color: navy;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    height: 80px;
+  font-size: xx-large;
+  background-color: navy;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  height: 80px;
 }
 
 #name.col {
-    height: 80px;
+  height: 80px;
 }
 
 /*overrides color, alignment and padding for hrefs in nav bar*/
 a {
-    color: navy;
-    align-items: center;
-    padding: 2%;
+  color: navy;
+  align-items: center;
+  padding: 2%;
 }
 
 /*aligns nav hrefs*/
 #links {
-    align-self: center;
+  align-self: center;
 }
 
 /*color and font for h1, h2 & h3*/
 h1,
 h2,
 h3 {
-    color: navy;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  color: navy;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 /*sets background color and alignment for main section*/
 main {
-    background-color: lightgray;
-    padding-top: 5%;
-    padding-left: 5%;
+  background-color: lightgray;
+  padding-top: 5%;
+  padding-left: 5%;
 }
 
 /*sets background color and alignment for mainContainer*/
 .mainContainer {
-    padding: 1%;
-    background-color: white;
+  padding: 1%;
+  background-color: white;
 }
 
 /*creates a uniform inset border on all images*/
 img {
-    border: inset;
-    width: 49%;
-    height: auto;
-    float: left;
+  border: inset;
+  width: 49%;
+  height: auto;
+  float: left;
 }
 
 div.mainContainer {
-    width: 725px;
+  width: 725px;
+}
+
+.carousel-control-prev {
+    top: -40%;
 }
 
 .carousel-control-next {
-    right: 35%;
+  right: 40%;
+  top: -40%;
 }
 
 /*Media queries are being used to override the default size reactions built into bootstrap so the portfolio better matches that of the provided assets*/
@@ -87,44 +91,42 @@ div.mainContainer {
 
 /*Small screen size wrapped from 767px and below*/
 @media (min-width: 100px) and (max-width: 767px) {
+  /*changes text alignment to center on small screen*/
+  #nav-flex div {
+    text-align: center;
+    padding-left: 0;
+    height: 150px;
+    line-height: 2rem;
+  }
 
-    /*changes text alignment to center on small screen*/
-    #nav-flex div {
-        text-align: center;
-        padding-left: 0;
-        height: 150px;
-        line-height: 2rem;
-    }
+  /*gives slight margin increase on small screen and expands white background evenly around nav links for better look & feel*/
+  main {
+    margin: 6%;
+  }
 
-    /*gives slight margin increase on small screen and expands white background evenly around nav links for better look & feel*/
-    main {
-        margin: 6%;
-    }
+  /*allows images and carousel to take a width based on parent width when on small screen*/
+  img {
+    width: inherit;
+  }
 
-    /*allows images and carousel to take a width based on parent width when on small screen*/
-    img {
-        width: inherit;
-    }
+  /*limits border spacing for better look & feel*/
+  div.mainContainer {
+    width: 100%;
+  }
 
-    /*limits border spacing for better look & feel*/
-    div.mainContainer {
-        width: 100%;
-    }
+  .col {
+    margin-left: -5%;
+  }
 
-    .col {
-        margin-left: -5%;
-    }
+  #profilePicture {
+    max-width: 290px;
+  }
 
-    #profilePicture {
-        max-width: 290px;
-    }
-
-    .carousel-control-prev {
-        top: 25%;
-    }
-    .carousel-control-next {
-        right: 10%;
-        top: 25%;
-    }
-
+  .carousel-control-prev {
+    top: -60%;
+  }
+  .carousel-control-next {
+    right: 10%;
+    top: -60%;
+  }
 }

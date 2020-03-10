@@ -1,199 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!--head of document-->
 
+  <head>
+    <meta charset="UTF-8" />
+    <!--Bootstrap ref-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Title to  match text below, this may not match HTML file name-->
+    <title>About</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7d87cc47cb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<!--head of document-->
-
-<head>
-  <meta charset="UTF-8">
-  <!--Bootstrap ref-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--Title to  match text below, this may not match HTML file name-->
-  <title>About</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/7d87cc47cb.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <!--Nav bar-->
-  <nav id="nav-flex">
-    <div class="row">
-      <!--student name appears inside a container on left which will span entire width on small screen-->
-      <h1 id="name" class="col-sm-12 col-md-4 col-lg-4;">Cody Switzer</h1>
-      <!--Links for other pages appear on the right-->
-      <div id="links" class="col-sm-12 col-md-8 col-lg-8">
-        <a href=" index.html"> About </a>
-        <a href="portfolio.html"> Portfolio </a>
-        <a href="contact.html"> Contact </a>
-        <a
-          href="https://docs.google.com/document/d/1qAGARoCOjh_8a_d3teaMyYCx6JeLeVV_4T7eKwMAqFI/edit?usp=sharing">Resume</a>
-        <a href="https://www.linkedin.com/in/cody-switzer-1429593a/"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/cswitzer85"><i class="fab fa-github-square"></i></a>
+  <body>
+    <!--Nav bar-->
+    <nav id="nav-flex">
+      <div class="row">
+        <!--student name appears inside a container on left which will span entire width on small screen-->
+        <h1 id="name" class="col-sm-12 col-md-4 col-lg-4;">Cody Switzer</h1>
+        <!--Links for other pages appear on the right-->
+        <div id="links" class="col-sm-12 col-md-8 col-lg-8">
+          <a href=" index.html"> About </a>
+          <a href="portfolio.html"> Portfolio </a>
+          <a href="contact.html"> Contact </a>
+          <a
+            href="https://docs.google.com/document/d/1qAGARoCOjh_8a_d3teaMyYCx6JeLeVV_4T7eKwMAqFI/edit?usp=sharing"
+            >Resume</a
+          >
+          <a href="https://www.linkedin.com/in/cody-switzer-1429593a/"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/cswitzer85"
+            ><i class="fab fa-github-square"></i
+          ></a>
+        </div>
       </div>
-    </div>
-  </nav>
-  <!--main section of the page with a container that remains set size for md & lg screens but is responsive at small screen breakpoint-->
-  <main>
-    <div class="col-lg-8 col-md-12 col-sm-12" style="height: auto; padding-left: 0;">
-      <div class="mainContainer">
-        <!--title for the page with a horizontal rule to  break up content-->
-        <h1>Portfolio</h1>
-        <HR>
-        <h5>Click an image to view GitHub hosted site.</h5>
-        <!--14 additional images on carousel at bottom of page, last/next image can be selected or a data tag can be clicked on to jump to any image-->
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
-            <!-- <li data-target="#carouselExampleCaptions" data-slide-to="6"></li> -->
-          </ol>
-          <!--source for images and captions, which can be viewed on medium or larger screens-->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <a href="https://cswitzer85.github.io/PasswordGenerator/"><img src="Assets/PasswordGeneratorScreenShot.png"
-                class="d-block w-100" alt="Password generator screen shot"></a>
-              <div class="carousel-caption d-none d-md-block">
-                <p style="color: red; background-color: lightskyblue;">Password Geneator - Create a random password with
-                  user defined critera</p>
+    </nav>
+    <!--main section of the page with a container that remains set size for md & lg screens but is responsive at small screen breakpoint-->
+    <main>
+      <div
+        class="col-lg-8 col-md-12 col-sm-12"
+        style="height: auto; padding-left: 0;"
+      >
+        <div class="mainContainer">
+          <!--title for the page with a horizontal rule to  break up content-->
+          <h1>Portfolio</h1>
+          <hr />
+          <h5>Click an image to view the hosted site.</h5>
+          <!--14 additional images on carousel at bottom of page, last/next image can be selected or a data tag can be clicked on to jump to any image-->
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleCaptions"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="7"></li>
+            </ol>
+            <!--source for images and captions, which can be viewed on medium or larger screens-->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="https://cswitzer85.github.io/PasswordGenerator/"
+                  ><img
+                    src="Assets/PasswordGeneratorScreenShot.png"
+                    class="d-block w-100"
+                    alt="Password generator screen shot"
+                /></a>
+
+                <div class="carousel-caption d-none d-md-block">
+                  <p style="color: red; background-color: lightskyblue;">
+                    Password Geneator - Create a random password with user
+                    defined critera
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <a href="https://cswitzer85.github.io/weather-dashboard/"><img src="Assets/WeatherAppScreenShot.png"
-                  class="d-block w-100" alt="Weather app screen shot"></a>
-              <div class="carousel-caption d-none d-md-block">
-                <p style="color: yellow; background-color: skyblue;">Weather App - Retrieve current and 5 day forecast
-                  data when searchng by city name</p>
+              <div class="carousel-item">
+                <a href="https://cswitzer85.github.io/weather-dashboard/"
+                  ><img
+                    src="Assets/WeatherAppScreenShot.png"
+                    class="d-block w-100"
+                    alt="Weather app screen shot"
+                /></a>
+
+                <div class="carousel-caption d-none d-md-block">
+                  <p style="color: yellow; background-color: skyblue;">
+                    Weather App - Retrieve current and 5 day forecast data when
+                    searching by city name
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <a href="https://cswitzer85.github.io/plannerForTheDay/"><img src="Assets/PlannerScreenShot.png"
-                  class="d-block w-100" alt="Planner screen shot"></a>
-              <div class="carousel-caption d-none d-md-block">
-                <p style="background-color: red;">Planner - Make a list of things to do for the day.</p>
+              <div class="carousel-item">
+                <a href="https://cswitzer85.github.io/plannerForTheDay/"
+                  ><img
+                    src="Assets/PlannerScreenShot.png"
+                    class="d-block w-100"
+                    alt="Planner screen shot"
+                /></a>
+
+                <div class="carousel-caption d-none d-md-block">
+                  <p style="background-color: red;">
+                    Planner - Make a list of things to do for the day.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <a href="https://cswitzer85.github.io/bootcamp-quiz/"><img src="Assets/BootcampQuiz.png"
-                  class="d-block w-100" alt="Bootcamp quiz screen shot"></a>
-              <div class="carousel-caption d-none d-md-block">
-                <p style="color: black; background-color: lime;">Bootcamp quiz - Test your basic coding knowledge
-                  against the clock!</p>
+              <div class="carousel-item">
+                <a href="https://cswitzer85.github.io/bootcamp-quiz/"
+                  ><img
+                    src="Assets/BootcampQuiz.png"
+                    class="d-block w-100"
+                    alt="Bootcamp quiz screen shot"
+                /></a>
+
+                <div class="carousel-caption d-none d-md-block">
+                  <p style="color: black; background-color: lime;">
+                    Bootcamp quiz - Test your basic coding knowledge against the
+                    clock!
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <a href="https://cswitzer85.github.io/Project1/"><img src="Assets/PokeQuizKidFriendlyScreenShot.png"
-                  class="d-block w-100" alt="PokeQuiz screen shot"></a>
-              <div class="carousel-caption d-none d-md-block">
-                <p style="background-color: black;">PokeQuiz - Guess the name of the pokemon on the screen. <br>
-                  Switch off "kid friendly" to generate a random drink at the end. </p>
+              <div class="carousel-item">
+                <a href="https://cswitzer85.github.io/Project1/"
+                  ><img
+                    src="Assets/PokeQuizKidFriendlyScreenShot.png"
+                    class="d-block w-100"
+                    alt="PokeQuiz screen shot"
+                /></a>
+
+                <div class="carousel-caption d-none d-md-block">
+                  <p style="background-color: black;">
+                    PokeQuiz - Guess the name of the pokemon on the screen.
+                    <br />
+                    Switch off "kid friendly" to generate a random drink at the
+                    end.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <a href="https://serene-stream-86216.herokuapp.com/"><img src="Assets/TakeNotesDelete.png"
-                  class="d-block w-100" alt="TakeNotes screen shot"></a>
-              <div class="carousel-caption d-none d-md-block">
-                <p style="background-color: #18BC9C;">takeNotes - Make, view and delete notes on this *locally hosted application. <br><br>
-                  *This application is hosted by Heroku, and allows the user to save, view and delete data.</p>
+              <div class="carousel-item">
+                <a href="https://serene-stream-86216.herokuapp.com/"
+                  ><img
+                    src="Assets/TakeNotesDelete.png"
+                    class="d-block w-100"
+                    alt="TakeNotes screen shot"
+                /></a>
+
+                <div class="carousel-caption d-none d-md-block">
+                  <p style="background-color: #18BC9C;">
+                    takeNotes - Make, view and delete notes on this *locally
+                    hosted application. <br /><br />
+                    *This application is hosted by Heroku, and allows the user
+                    to save, view and delete data.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <a href="https://frozen-ridge-41699.herokuapp.com/"><img src="Assets/BurgerScreenShot.png"
-                  class="d-block w-100" alt="burger screen shot"></a>
-              <div class="carousel-caption d-none d-md-block">
-                <p style="background-color:cornflowerblue;">burger - Allows the user to input the name of a burger, which is then sent to a database. The data can then be updated or delted through HTML interface. <br><br>
-                  *This application is hosted by Heroku, and demonstrates the interaction between a user and a database.</p>
+              <div class="carousel-item">
+                <a href="https://frozen-ridge-41699.herokuapp.com/"
+                  ><img
+                    src="Assets/BurgerScreenShot.png"
+                    class="d-block w-100"
+                    alt="burger screen shot"
+                /></a>
+
+                <div class="carousel-caption d-none d-md-block">
+                  <p style="background-color:cornflowerblue;">
+                    burger - Allows the user to input the name of a burger,
+                    which is then sent to a database. The data can then be
+                    updated or delted through HTML interface. <br /><br />
+                    *This application is hosted by Heroku, and demonstrates the
+                    interaction between a user and a database.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="https://project2-cody-gen-leo.herokuapp.com/"
+                  ><img
+                    src="Assets/project2MemberPage.png"
+                    class="d-block w-100"
+                    alt="project2 screen shot"
+                /></a>
+
+                <div class="carousel-caption d-none d-md-block">
+                  <p style="background-color:#158cba;">
+                    project2 - a collaborative endeavour and the culmination of
+                    the SMU Coding Boot Camp cirriculum at 2/3rd completion. In an
+                    effort to combine the most concepts into a single
+                    application, we opted to create a Heroku hosted blog using
+                    Passport, MySQL, Travis, ESLint, Sequelize, Express,
+                    node.js, jQuery, Handlebars and Zomato API.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+          <div>
+            <!--last/next buttons for carousel-->
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleCaptions"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleCaptions"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         </div>
-        <!--last/next buttons for carousel-->
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+        <!-- </div> -->
+        <div class="URLs">
+          <br />
+          <ul>
+            <li>
+              Password Geneator <br /><a
+                style="overflow-wrap: break-word;"
+                href="https://github.com/cswitzer85/PasswordGenerator"
+                >https://github.com/cswitzer85/PasswordGenerator</a
+              ><br /><a
+                style="overflow-wrap: break-word;"
+                href="https://cswitzer85.github.io/PasswordGenerator/"
+                >https://cswitzer85.github.io/PasswordGenerator/</a
+              >
+            </li>
+            <br />
+            <li>
+              Weather App <br /><a
+                style="overflow-wrap: break-word;"
+                href="https://github.com/cswitzer85/weather-dashboard"
+                >https://github.com/cswitzer85/weather-dashboard</a
+              ><br /><a
+                style="overflow-wrap: break-word;"
+                href="https://cswitzer85.github.io/weather-dashboard/"
+                >https://cswitzer85.github.io/weather-dashboard/</a
+              >
+            </li>
+            <br />
+            <li>
+              Day Planner <br /><a
+                style="overflow-wrap: break-word;"
+                href="https://github.com/cswitzer85/plannerForTheDay"
+                >https://github.com/cswitzer85/plannerForTheDay</a
+              ><br /><a
+                style="overflow-wrap: break-word;"
+                href="https://cswitzer85.github.io/plannerForTheDay/"
+                >https://cswitzer85.github.io/plannerForTheDay/</a
+              >
+            </li>
+            <br />
+            <li>
+              Code Quiz <br /><a
+                style="overflow-wrap: break-word;"
+                href="https://github.com/cswitzer85/bootcamp-quiz"
+                >https://github.com/cswitzer85/bootcamp-quiz</a
+              ><br /><a
+                style="overflow-wrap: break-word;"
+                href="https://cswitzer85.github.io/bootcamp-quiz/"
+                >https://cswitzer85.github.io/bootcamp-quiz/</a
+              >
+            </li>
+            <br />
+            <li>
+              Poke Quiz <br /><a
+                style="overflow-wrap: break-word;"
+                href="https://github.com/cswitzer85/Project1"
+                >https://github.com/cswitzer85/Project1</a
+              ><br /><a
+                style="overflow-wrap: break-word;"
+                href="https://cswitzer85.github.io/Project1/"
+                >https://cswitzer85.github.io/Project1/</a
+              >
+            </li>
+            <br />
+            <li>
+              Take Notes <br /><a
+                style="overflow-wrap: break-word;"
+                href="https://github.com/cswitzer85/takeNotes"
+                >https://github.com/cswitzer85/takeNotes</a
+              ><br />
+              <a
+                style="overflow-wrap: break-word;"
+                href="https://cswitzer85.github.io/takeNotes/"
+                >https://cswitzer85.github.io/takeNotes/</a
+              ><br />
+              <a
+                style="overflow-wrap: break-word;"
+                href="https://serene-stream-86216.herokuapp.com/"
+                >Launch Hosted Application</a
+              >
+            </li>
+            <br />
+            <li>
+              Burger App <br /><a
+                style="overflow-wrap: break-word;"
+                href="https://github.com/cswitzer85/burger"
+                >https://github.com/cswitzer85/burger</a
+              ><br />
+              <a
+                style="overflow-wrap: break-word;"
+                href="https://cswitzer85.github.io/burger/"
+                >https://cswitzer85.github.io/burger</a
+              ><br />
+              <a
+                style="overflow-wrap: break-word;"
+                href="https://frozen-ridge-41699.herokuapp.com/"
+                >Launch Hosted Application</a
+              >
+            </li>
+            <br />
+            <li>
+              Porject2 <br /><a
+                style="overflow-wrap: break-word;"
+                href="https://github.com/cswitzer85/project2"
+                >https://github.com/cswitzer85/project2</a
+              ><br />
+              <a
+                style="overflow-wrap: break-word;"
+                href="https://cswitzer85.github.io/project2/"
+                >https://cswitzer85.github.io/project2/</a
+              ><br />
+              <a
+                style="overflow-wrap: break-word;"
+                href="https://project2-cody-gen-leo.herokuapp.com/"
+                >Launch Hosted Application</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    </div>
-    <div class="URLs">
-      <br>
-      <ul>
-        <li>
-          Password Geneator <br><a style="overflow-wrap: break-word;"
-            href="https://github.com/cswitzer85/PasswordGenerator">https://github.com/cswitzer85/PasswordGenerator</a><br><a
-            style="overflow-wrap: break-word;"
-            href="https://cswitzer85.github.io/PasswordGenerator/">https://cswitzer85.github.io/PasswordGenerator/</a>
-        </li>
-        <br>
-        <li>
-          Weather App <br><a style="overflow-wrap: break-word;"
-            href="https://github.com/cswitzer85/weather-dashboard">https://github.com/cswitzer85/weather-dashboard</a><br><a
-            style="overflow-wrap: break-word;"
-            href="https://cswitzer85.github.io/weather-dashboard/">https://cswitzer85.github.io/weather-dashboard/</a>
-        </li>
-        <br>
-        <li>
-          Day Planner <br><a style="overflow-wrap: break-word;"
-            href="https://github.com/cswitzer85/plannerForTheDay">https://github.com/cswitzer85/plannerForTheDay</a><br><a
-            style="overflow-wrap: break-word;"
-            href="https://cswitzer85.github.io/plannerForTheDay/">https://cswitzer85.github.io/plannerForTheDay/</a>
-        </li>
-        <br>
-        <li>
-          Code Quiz <br><a style="overflow-wrap: break-word;"
-            href="https://github.com/cswitzer85/bootcamp-quiz">https://github.com/cswitzer85/bootcamp-quiz</a><br><a
-            style="overflow-wrap: break-word;"
-            href="https://cswitzer85.github.io/bootcamp-quiz/">https://cswitzer85.github.io/bootcamp-quiz/</a>
-        </li>
-        <br>
-        <li>
-          Poke Quiz <br><a style="overflow-wrap: break-word;"
-            href="https://github.com/cswitzer85/Project1">https://github.com/cswitzer85/Project1</a><br><a
-            style="overflow-wrap: break-word;"
-            href="https://cswitzer85.github.io/Project1/">https://cswitzer85.github.io/Project1/</a>
-        </li>
-        <br>
-        <li>
-          Take Notes <br><a style="overflow-wrap: break-word;"
-            href="https://github.com/cswitzer85/takeNotes">https://github.com/cswitzer85/takeNotes</a><br>
-            <a style="overflow-wrap: break-word;"
-            href="https://cswitzer85.github.io/takeNotes/">https://cswitzer85.github.io/takeNotes/</a><br>
-            <a style="overflow-wrap: break-word;"
-            href="https://serene-stream-86216.herokuapp.com/">Launch Hosted Application</a>
-          </li>
-          <br>
-          <li>
-            Burger App <br><a style="overflow-wrap: break-word;"
-            href="https://github.com/cswitzer85/burger">https://github.com/cswitzer85/burger</a><br>
-            <a style="overflow-wrap: break-word;"
-            href="https://cswitzer85.github.io/burger/">https://cswitzer85.github.io/burger//a><br>
-            <a style="overflow-wrap: break-word;"
-            href="https://frozen-ridge-41699.herokuapp.com/">Launch Hosted Application</a>
-        </li>
-        <br>
-      </ul>
-    </div>
-  </main>
+    </main>
 
-  <!--script sources at bottom of body to help with render speed-->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-  </script>
-</body>
-
+    <!--script sources at bottom of body to help with render speed-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
